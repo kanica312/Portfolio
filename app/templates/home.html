@@ -1,0 +1,305 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+   <link rel="stylesheet" href="{%static 'css/bootstrap.min.css'%}">
+  <link rel="stylesheet" href="{%static 'css/bootstrap-icons.min.css'%}">
+  <link rel="stylesheet" href="{%static 'css/style.css'%}">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="icon" href="{%static '/IMAGES/KS.png.ico'%}">
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-secondary">
+    <div class="container">
+      <a class="navbar-brand ms-1 fw-bold border p-2 rounded-circle text-black font bg-grey" href="#">KS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active text-white font" aria-current="page" href="#">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font" href="#projects">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font" href="#education">EDUCATION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font" href="#contact">CONTACT US</a>
+          </li>
+          <li class="nav-item">
+            <button class=" border rounded-pill  ms-4 px-4 bg-grey"><a class="nav-link text-dark font"
+                href="{% static '/IMAGES/RESUME.jpg' %}" target="_blank">VIEW RESUME <i class="bi bi-arrow-right"></i></a></button>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="container py-5">
+    <div class="row">
+        <div class="col-4 text-center mt-5 pt-5">
+            <img src="{% static '/images/me.jpeg' %}" class="rounded-circle border border-secondary border-5" alt="" height="300px" width="300px">
+        </div>
+        <div class="col-8">
+            <span class="border-bottom border-secondary border-3 fw-bold fs-4">HI THERE</span>
+            <H1 class="font-name fw-bold">I'M KANICA</H1>
+            <span class="d-inline-block bg-grey fw-bold px-3 py-2 ">FULL-STACK WEB DEVELOPER</span><br>
+            <span class=" d-inline-block bg-secondary fw-bold px-3 py-2 mt-2 text-light">READY TO HANDLE YOUR PROJECT</span>
+            <p class="font mt-4 lh-base fs-4 text-justify">I'm a passionate web developer with strong interest
+          in building
+          responsive and user-friendly websites.I enjoy turning ideas into real,working web applications using modern
+          technologies like HTML,CSS,JavaScript and framework such as Django.My goal is to become a professional
+      full-stack developer. I enjoy designing clean user interfaces and building functional backend systems. I’ve worked
+      on academic and personal projects like websites, CRUD apps, and beginner-level machine learning integrations. I'm
+      always excited to learn, build, and grow as a developer</p>
+        </div>
+    </div>
+     <div class="row my-5 py-3 justify-content-center">
+      <div class="col-md-6">
+        <h1 class="font-name fw-bold">MY KEY SKILLS</h1>
+        <p class="font mt-4 lh-base fs-4 text-justify">I focus on building responsive and user-friendly websites. I
+          understand how front-end and back-end connect to create complete web applications. My skills include
+          structuring pages with HTML, styling with CSS, making layouts responsive with Bootstrap, and building dynamic
+          web apps using Python and Django.</p>
+      </div>
+      <div class="col-md-6 text-center">
+        <div class="m-3"><button class="bg-secondary p-3 br w-50"><a href="https://www.djangoproject.com/"
+              target="_blank" class="text-decoration-none text-white">PYTHON DJANGO</a></button></div>
+        <div class="m-3"><button class="bg-secondary text-white p-3 br w-50"><a
+              href="https://www.geeksforgeeks.org/blogs/what-is-full-stack-development/" target="_blank"
+              class="text-decoration-none text-white">FULL-STACK DEVELOPEMENT</a></button></div>
+        <div class="m-3"><button class="bg-secondary text-white p-3 br w-50"><a href="https://www.java.com/en/"
+              target="_blank" class="text-decoration-none text-white">JAVA PROGRAMMING</a></button></div>
+        <div class="m-3"><button class="bg-secondary text-white p-3 br w-50"><a
+              href="https://www.geeksforgeeks.org/dbms/what-is-database/" target="_blank"
+              class="text-decoration-none text-white">DATABASE BASICS</a></button></div>
+
+      </div>
+    </div>
+    </div>
+
+  </section>
+  <div class="bg-secondary">
+    <section class="container py-5" id="projects">
+      <h1 class="text-white font text-center display-5">Projects</h1>
+
+      <div class="row justify-content-center my-5 gap-5">
+        <div class="col-4">
+          <div class="card w-100 zoom-img" style="min-width: 400px; min-height: 570px;">
+            
+            <img src="{% static '/IMAGES/68-farm-backyard-cartoon-background-vector-clipart.jpg'%}" class="card-img-top " alt="..."
+              style="height:280px">
+            <div class="card-body">
+              <h5 class="card-title">AgriCare</h5>
+               <button class=" btn bg-grey rounded-pill px-2 text-black">Python Django</button>
+              <button class=" btn bg-grey rounded-pill px-2 text-black">Bootstrap</button>
+        
+            <button class=" btn bg-grey rounded-pill px-2 text-black">Tensorflow</button>
+              <p class="card-text mt-2">A Python Django Website that provides E-commerce platform with ML feature of disease
+                detection and product recommendation</p>
+                <p>GitHub: <a href="https://github.com/kanica312/AGRI_CARE">https://github.com/kanica312/AGRI_CARE</a></p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card w-100 zoom-img"style="min-width: 400px; min-height: 570px;">
+            <img src="{% static '/IMAGES/WhatsApp Image 2026-02-04 at 5.11.24 PM.jpeg'%}" class="card-img-top" alt="..."
+              style="height:280px">
+            <div class="card-body">
+              <h5 class="card-title">Photography Booking System</h5>
+              <button class=" btn bg-grey rounded-pill px-2 text-black">Bootstrap</button>
+              <button class=" btn bg-grey rounded-pill px-2 text-black">HTML</button>
+              <button class=" btn bg-grey rounded-pill px-2 text-black">CSS</button>
+<button class=" btn bg-grey rounded-pill px-2 text-black">Python Django</button>
+              <p class="card-text mt-2">A Photography booking site where users can view photos,videos uploaded by the Admin and admin can upload images and videos </p>
+<p>GitHub: <a href="https://github.com/kanica312/Photography_Booking_System">https://github.com/kanica312/Photography_Booking_System</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center my-5 gap-5">
+        <div class="col-4">
+          <div class="card w-100 zoom-img" style="min-width: 400px; min-height: 570px;">
+            <img src="{% static '/IMAGES/cart.png'%}" class="card-img-top" alt="..." style="height:280px">
+            <div class="card-body">
+              <h5 class="card-title">Glow cart</h5>
+         
+              <button class=" btn bg-grey rounded-pill px-2 text-black">JavaScript</button>
+              <button class=" btn bg-grey rounded-pill px-2 text-black">Python Django</button>
+              <button class=" btn bg-grey rounded-pill px-2 pt-1 text-black">MediaPipe</button>
+              <p class="card-text mt-2">A E-commerce website where users can buy and Admin can view the
+                users,orders and payment with Foundation-Match AI feature and Skin-Type Detection</p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card w-100 zoom-img" style="min-width: 400px; min-height: 570px;">
+            <img src="{% static '/IMAGES/download.jfif'%}"  class="card-img-top" alt="..." style="height:280px">
+            <div class="card-body">
+              <h5 class="card-title">Online Quiz</h5>
+               <button class=" btn bg-grey rounded-pill px-2 text-black">Bootstrap</button>
+              <button class=" btn bg-grey rounded-pill px-2 text-black">JavaScript</button>
+              <button class=" btn bg-grey rounded-pill px-2 text-black">HTML</button>
+              <button class=" btn bg-grey rounded-pill px-2 text-black">CSS</button>
+             
+              <p class="card-text mt-2">A online quiz which offer a choice between subjects and also provide scoring as per
+                the right answers.It is made with HTML,CSS,JavaScript</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+  <section class="container py-5" id="education">
+    <h1 class="font text-center display-5">Education & Certifications</h1>
+    <h3 class="font-name fw-bold mt-3 text-center">My<span class="font-intro fw-bold text-secondary">Academic and
+        Professional</span> Journey</h3>
+    <div class="row my-5 gap-5 justify-content-center">
+      <div class="col-5 p-5 bg-grey">
+
+        <h5><span class="bg-white rounded-circle p-2 me-2"><i class="bi bi-mortarboard-fill"></i> </span> Education</h5>
+        <div class="mt-3 border-dark border-start p-3 ms-5">
+          <small class="">2020-2021</small>
+          <h4>Alexandra School</h4>
+          <small>Secondary</small>
+        </div>
+        <div class="mt-3 border-dark border-start p-3 ms-5">
+          <small class="">2022-2023</small>
+          <h4>MVN School</h4>
+          <small>Marticulation</small>
+        </div>
+        <div class="mt-3 border-dark border-start p-3 ms-5">
+          <small class="">2023-2026</small>
+          <h4>Guru Nanak Dev University</h4>
+          <small>Bachelors of Computer Application</small>
+        </div>
+
+
+
+
+
+      </div>
+      <div class="col-5 p-5 bg-grey">
+        <h5><span class="bg-white rounded-circle p-2 me-2"><i class="bi bi-briefcase-fill"></i> </span> Certifications
+        </h5>
+        <div class="mt-3 border-dark border-start p-3 ms-5">
+          <small class="">2025</small>
+          <h4>Infosys</h4>
+          <small>Machine Learning with Python</small> Course</small>
+          <p class="mt-3"><button class="btn btn-dark rounded-pill"><a href="{% static '/IMAGES/infosys.jpeg' %}" class="text-light">View Here</a></button></p>
+        </div>
+
+
+
+
+
+        <div class="mt-3 border-dark border-start p-3 ms-5">
+          <small class="">2026</small>
+          <h4>Welcode Institute</h4>
+          <small>Web Developement with Python</small>
+          <p class="mt-3"><button class="btn btn-dark rounded-pill"><a href="{% static '/IMAGES/welcode.pdf' %}" class="text-light">View Here</a></button></p>
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+  <div class="bg-secondary">
+    <section class="container p-5" id="contact">
+      <h2 class="text-white font-intro fw-bold"><span class="text-dark">~ </span>Contact Me</h2>
+      <div class="row my-4">
+        <div class="col-md-4">
+          
+          <h1 class="text-white font-name fw-bold">Let's Talk for <span class="text-dark">Your Queries</span></h1>
+          <i><p class="text-white font fs-5">Got a question or just want to chat? Drop Me a message</p> </i>
+           <div class="my-4">
+
+            <p class="font fs-5"> <span class="bg-white rounded-circle p-2"><i class="bi bi-telephone-fill"></i></span>
+              +91 9888 051 083</p>
+            <p class="my-4 font fs-5"> <span class="bg-white rounded-circle p-2"><i
+                  class="bi bi-envelope-fill"></i></span> 10kanica10aalex@gmail.com</p>
+            <p class="font fs-5"> <span class="bg-white rounded-circle p-2"><i
+                  class="bi bi-geo-alt-fill"></i></span> 231,Paradise Avenue,Chheherta,143001</p>
+
+          </div>
+
+        </div>
+        <div class="col-md-8">
+          {% if messages %}
+              {% for message in messages %}
+                 <div class="alert alert-success">
+                 {{ message }}
+                 </div>
+              {% endfor %}
+          {% endif %}
+          <form method="POST">
+            {% csrf_token %}
+            <!-- <div class="row">
+              <div class="col-6 mt-3">
+                <label for="" class="font fw-bold ">Your Name <span class="text-danger">*</span></label>
+                <input type="text" placeholder="Ex.John Doe(only a-z,A-Z)" class="form-control" required minlength="3" pattern="[A-Za-z]+">
+              </div>
+              <div class="col-6 mt-3">
+                <label for="" class="font fw-bold fs-6">Email <span class="text-danger">*</span></label>
+                <input type="email" placeholder="Example@gmail.com" class="form-control" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mt-3">
+                <label for="" class="font fw-bold fs-6">Phone</label>
+                <input type="number" placeholder="Enter Phone Number" class="form-control" minlength="10" required>
+              </div>
+              <div class="col-md-6 mt-3">
+                <label for="" class="font fw-bold fs-6">Choose City</label>
+                <select name="city" id="" class="form-select">
+                  <option value="">Select City</option>
+                  <option value="">Mumbai</option>
+                  <option value="">Delhi</option>
+                  <option value="">Punjab</option>
+                </select>
+              </div>
+
+            </div>
+
+            <div class="row">
+              <div class="col-md-12 mt-3">
+                <label for="" class="font fw-bold fs-6">Your Message</label>
+                <textarea name="" id="" placeholder="Type a message" class="form-control" rows="5"></textarea>
+
+              </div> -->
+              {{form}}
+            <p class="text-center mt-3"><button class="btn btn-light text-dark rounded-pill px-5 font fw-bold fs-">
+                Submit <span class="bg-grey rounded-circle p-2"><i class="bi bi-arrow-right"></i></span></button>
+            </p>
+            </div>
+          
+          </form>
+        </div>
+
+    </section>
+    
+  
+  </div>
+
+</body>
+
+</html> 
